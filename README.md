@@ -4,8 +4,8 @@
 # 💫 About Me :
 <img align="center" height="200p" src="https://media.tenor.com/images/f2684f1e77b61d7d32243d9bfe36d445/tenor.gif">
 <div align="left">
+  
   <p>
-    
     - 👋️ Hi, I'm Dafin<br>
     - 🎓️ I'm currently studying Informatics at Universitas Negeri Padang<br>
     - 🌱️ I'm in the process of learning algorithms using the C and C++ language<br>
