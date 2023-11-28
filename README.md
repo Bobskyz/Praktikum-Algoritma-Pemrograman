@@ -6,7 +6,7 @@
 <div align="left">
   <p>
     - 👋️ Hi, I'm Dafin<br>
-    - 🎓️ I am currently studying Informatics at Universitas Negeri Padang<br>
+    - 🎓️ I'm currently studying Informatics at Universitas Negeri Padang<br>
     - 🌱️ I'm in the process of learning algorithms using the C and C++ language<br>
     - 🤔 I’m looking for help with anything I am currently learning! 😄<br>
   </p>
