@@ -1,1 +1,1 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Welcome+to+My+Repository;My+Name+is+Dafin+Surya)](https://git.io/typing-svg)
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Consolas&weight=100&size=25&duration=2000&pause=1000&color=00FFFF&background=FF000000&center=true&vCenter=true&random=false&width=500&lines=Welcome+to+My+Repository;My+Name+is+Dafin+Surya" alt="Typing SVG" /></a>
