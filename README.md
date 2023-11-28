@@ -7,13 +7,13 @@
   <p>
     - 👋️ Hi, I'm Dafin<br>
     - 🎓️ I am currently studying Informatics at Universitas Negeri Padang<br>
-    - 🌱️ I'm in the process of learning algorithms using the C or C++ language<br>
+    - 🌱️ I'm in the process of learning algorithms using the C and C++ language<br>
     - 🤔 I’m looking for help with anything I am currently learning! 😄<br>
   </p>
 </div>
 
 ## 💻 Tech Stack :
-![C++](https://img.shields.io/badge/c++-%231572B6.svg?style=for-the-badge&logo=c++&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![Cpp](https://img.shields.io/badge/c++-%231572B6.svg?style=for-the-badge&logo=c++&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 
 ### 🌐 Socials :
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/Bobsky) [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://web.facebook.com/dafinsurya.dafin) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/dafinsurya/)
