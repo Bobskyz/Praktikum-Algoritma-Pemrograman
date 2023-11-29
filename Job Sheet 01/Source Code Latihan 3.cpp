@@ -1,4 +1,4 @@
-//Developed by : Bobsky
+//Developed by : Bobskyz
 #include<stdio.h>
 
 int main(){
