@@ -1,4 +1,4 @@
-//Developed by : Bobsky
+//Developed by : Bobskyz
 #include<stdio.h>
 #define phi 3.14
 
