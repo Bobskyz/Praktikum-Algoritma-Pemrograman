@@ -1,3 +1,4 @@
+//Developed by : Bobskyz
 #include<stdio.h>
 
 float potong (float pembelian){
