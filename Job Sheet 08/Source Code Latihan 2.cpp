@@ -1,3 +1,4 @@
+//Developed by : Bobskyz
 #include<stdio.h>
 
 int penjumlahan (int a, int b){
