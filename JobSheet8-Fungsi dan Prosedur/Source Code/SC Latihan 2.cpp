@@ -53,7 +53,7 @@ int main (){
 			scanf ("%d", &a);
 			printf ("Inputkan nilai variabel b : ");
 			scanf ("%d", &b);
-			printf ("\nHasil dari %d / %d = %d", a, b, pembagian(a, b));
+			printf ("\nHasil dari %d / %d = %.2f", a, b, pembagian(a, b));
 			break;
 			
 		default :
