@@ -2,23 +2,17 @@
 #include<stdio.h>
 
 int main (){
-	int ditemukan, cari, NilaiRtRt[20] = {59, 67, 92, 83, 74, 91, 78, 94, 88, 84,
-										  80, 70, 82, 76, 79, 58, 52, 75, 63, 69};
+	int ditemukan, cari, NilaiMhs[20] = {59, 67, 92, 83, 74, 91, 78, 94, 88, 84,
+					     80, 70, 82, 76, 79, 58, 52, 75, 63, 69};
+	float nilai = 0;
 					   
-	printf ("Inputkan Nilai rata-rata yang akan dicari (0-100): ");
-	scanf ("%d", &cari);
-	
-	for (int a = 0; a < 20; a++){
-		if (cari == NilaiRtRt[a]){
-			printf ("\nNilai Rata-Rata tersebut berada pada data Mahasiswa ke-%d\n", a+1);
-			ditemukan = 1;
-			break;
-		}
+	for(int a = 0; a < 20; a++) {
+		printf ("Nilai Mahasiswa ke-%d = %d\n", a+1, NilaiMhs[a]);
+		nilai += NilaiMhs[a];
 	}
+	nilai /= 20;
 	
-	if (ditemukan != 1){
-		printf ("\nNilai Rata-Rata tersebut tidak ditemukan\n");
-	}
+	printf ("\nNilai rata-rata dari 20 nilai mahasiswa tersebut = %.2f", nilai);
 	
 	return 0;
 }
