@@ -4,7 +4,7 @@
 #include<stdlib.h>
 
 int main (){
-	char input_username[20], input_pw[20], pw[] = "bobsky1234";
+	char input_username[20], input_pw[20], pw[] = "dafin123";
 	
 	do {
 		printf ("Inputkan Username : ");
