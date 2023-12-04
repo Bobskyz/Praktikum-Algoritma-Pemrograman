@@ -10,9 +10,12 @@ int main (){
 	scanf ("%d", &a);
 	printf ("Inputkan nilai b : ");
 	scanf ("%d", &b);
+	int hasil = a*b;
 	
 	printf ("\n%d x %d = ", a, b);
 	sum(a, b);
+	
+	printf (" = %d", hasil);
 	
 	return 0;
 }
