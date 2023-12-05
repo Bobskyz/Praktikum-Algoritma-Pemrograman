@@ -50,9 +50,9 @@ int main() {
 
         printf ("Ingin bermain lagi? (y untuk bermain kembali): ");
         scanf (" %c", &MainLagi);
+	system ("cls");
     } while(MainLagi == 'y');
     
-    system ("cls");
     printf ("Terima kasih telah bermain\n");
     system ("PAUSE");
 
