@@ -9,7 +9,7 @@ enum Tebakan {
     benar
 };
 void judul() {
-	printf ("================\n");
+    printf ("================\n");
     printf ("Game Tebak Angka\n");
     printf ("================\n");
 }
@@ -20,7 +20,7 @@ void permainan() {
 	int percobaan = 0;
 	
     do {srand(time(0));
-		int tebakan, BatasTerendah = 1, BatasTertinggi = 20;
+	int tebakan, BatasTerendah = 1, BatasTertinggi = 20;
     	int RandomNumber = (rand() % (BatasTertinggi - BatasTerendah + 1)) + BatasTerendah;
     	
     	printf ("Tebak angka dari 1 sampai 20\n");
