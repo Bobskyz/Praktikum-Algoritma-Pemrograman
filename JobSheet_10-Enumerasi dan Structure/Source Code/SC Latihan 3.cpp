@@ -31,9 +31,7 @@ void TambahMhs(DataMhs *mhs) {
 	gets (mhs->hp);
 }
 void TampilkanData(DataMhs mhs) {
-	judul();
-	
-	printf ("%d   %s   %s   %s   %s\n", mhs.npm, mhs.nama ,mhs.TanggalLahir, mhs.alamat, mhs.hp);
+	printf ("%d\t%s\t%s\t%s\t%s\n", mhs.npm, mhs.nama ,mhs.TanggalLahir, mhs.alamat, mhs.hp);
 }
 int main() {
 	DataMhs mhs[MaxMhs];
@@ -49,6 +47,8 @@ int main() {
     	scanf (" %c", &tambah);
     	system("cls");
 	} while(tambah == 'y');
+	
+	judul();
 	
 	for(int a = 0; a < JumlahMhs; a++) {
 		TampilkanData(mhs[a]);
