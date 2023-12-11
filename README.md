@@ -4,6 +4,7 @@
 👨‍🎓 Name : Dafin Surya<br>
 📇 Student ID Number : 23343032<br>
 📚 Courses : Informatics<br>
+🏫 College : Universitas Negeri Padang<br>
 🧑‍🏫️ Lecturer : Randi Proska Sandra, M.Sc<br>
 📋 Class Code : INF1.62.1008<br>
 📑 Semester : 1<br>
