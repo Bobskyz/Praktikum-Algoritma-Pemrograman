@@ -134,6 +134,62 @@ int max = (a > b) ? a : b; // Jika a lebih besar dari b, nilai max adalah a, jik
 Operator-operator ini membantu dalam melakukan operasi matematika, penugasan nilai, perbandingan, logika, dan manipulasi bit, memungkinkan pengembang untuk mengontrol aliran program dan melakukan operasi matematika serta logika dalam bahasa C dengan lebih efisien.
 
 ## Job Sheet 5 - FLow Control (Decision Making)
+- **If Statement :** Digunakan untuk melakukan pengujian kondisi tunggal.
+    ```c
+    if (kondisi) {
+        // blok kode yang akan dijalankan jika kondisi benar (true)
+    }
+    ```
+
+- **If-else Statement :** Digunakan untuk melakukan pengujian kondisi ganda.
+    ```c
+    if (kondisi) {
+        // blok kode yang akan dijalankan jika kondisi benar (true)
+    } else {
+        // blok kode yang akan dijalankan jika kondisi salah (false)
+    }
+    ```
+
+- **Switch Case :** Digunakan ketika ingin memilih dari sejumlah besar kemungkinan.
+    ```c
+    switch (ekspresi) {
+        case nilai1:
+            // blok kode jika ekspresi sama dengan nilai1
+            break;
+        case nilai2:
+            // blok kode jika ekspresi sama dengan nilai2
+            break;
+        default:
+            // blok kode yang akan dijalankan jika tidak ada nilai yang cocok
+    }
+    ```
+
+- **Operator Ternary :** Menyediakan cara singkat untuk menulis pernyataan if-else dalam satu baris.
+    ```c
+    kondisi ? nilai_jika_true : nilai_jika_false;
+    ```
+
+Contoh penggunaan :
+```c
+int a = 10, b = 5;
+int max = (a > b) ? a : b; // Jika a lebih besar dari b, nilai max adalah a, jika tidak, nilai max adalah b
+```
+
+- **Percabangan Bersarang (Nested) :** Merupakan penggunaan percabangan di dalam percabangan.
+    ```c
+    if (kondisi1) {
+        // blok kode jika kondisi1 benar (true)
+        if (kondisi2) {
+            // blok kode jika kondisi2 benar (true)
+        } else {
+            // blok kode jika kondisi2 salah (false)
+        }
+    } else {
+        // blok kode jika kondisi1 salah (false)
+    }
+    ```
+
+Percabangan memberikan fleksibilitas dalam mengontrol aliran program berdasarkan kondisi tertentu. If dan if-else digunakan untuk percabangan sederhana atau ganda, switch case digunakan untuk pilihan dari banyak nilai, operator ternary untuk percabangan singkat, dan percabangan bersarang untuk situasi kompleks yang memerlukan pengecekan berjenjang. Dengan memahami dan menggunakan percabangan secara efektif, Anda dapat mengendalikan alur program dengan lebih baik.
 
 ## Job Sheet 6 - Flow Control (Looping)
 
