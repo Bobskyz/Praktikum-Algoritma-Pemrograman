@@ -69,6 +69,24 @@ Kedua fungsi, `printf()` dan `scanf()`, membutuhkan format string yang menggamba
 C memiliki banyak fungsi I/O lainnya di luar `printf()` dan `scanf()` yang dapat digunakan untuk membaca dan menulis ke file, tetapi untuk input-output dasar, fungsi-fungsi ini seringkali sudah cukup.
 
 ## Job Sheet 3 - Variabel, Konstanta dan Tipe Data
+### Variabel dan Konstanta :
+- **Variabel :** Variabel adalah lokasi penyimpanan yang diberi nama di dalam memori komputer yang nilainya dapat berubah selama jalannya program. Contohnya: `int angka = 5;` di mana `angka` adalah variabel dengan nilai awal 5.
+- **Konstanta :** Konstanta adalah nilai yang tetap dan tidak dapat diubah selama eksekusi program. Ada dua jenis utama: konstanta literal (nilai tetap langsung seperti `5`, `3.14`, atau `'A'`) dan konstanta simbolik yang didefinisikan oleh preprocessor (`#define PI 3.14`).
+
+### Tipe Data Fundamental :
+- **Tipe Data :** Tipe data adalah jenis nilai yang dapat disimpan dalam variabel. Tipe data fundamental dalam C meliputi :
+    - **Integer (`int`, `short`, `long`, `long long`) :** Untuk menyimpan bilangan bulat.
+    - **Floating Point (`float`, `double`) :** Untuk menyimpan angka desimal.
+    - **Character (`char`) :** Untuk menyimpan karakter atau huruf.
+    - **Boolean (`_Bool`) :** Untuk menyimpan nilai kebenaran (`0` untuk salah, `1` untuk benar).
+
+### Type Casting :
+- **Type Casting :** Ini adalah proses mengubah tipe data dari satu jenis ke tipe data lain. Contohnya, dari `int` ke `float` atau sebaliknya. Ada dua jenis: *implicit* (otomatis oleh compiler) dan *explicit* (dilakukan secara manual oleh programmer menggunakan operator casting seperti `(float)` atau `(int)`).
+
+### Keywords dalam Bahasa C :
+- **Keywords :** Keywords atau kata kunci adalah kata-kata yang telah dipesan oleh bahasa pemrograman C untuk tujuan tertentu. Contoh beberapa kata kunci dalam C antara lain `if`, `else`, `for`, `while`, `int`, `float`, `char`, `return`, dan lainnya. Keywords ini tidak dapat digunakan sebagai nama variabel karena sudah memiliki makna khusus dalam bahasa C.
+
+Ini adalah konsep-konsep dasar dalam bahasa C yang sangat penting untuk dipahami oleh programmer. Dengan pemahaman yang baik tentang variabel, konstanta, tipe data, type casting, dan keywords, seseorang dapat memulai perjalanan dalam mempelajari dan menggunakan bahasa pemrograman C dengan lebih efektif.
 
 ## Job Sheet 4 - Operator
 
