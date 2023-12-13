@@ -33,6 +33,51 @@ Dengan menggunakan algoritma sebagai panduan, seorang programmer membuat program
 Setiap lingkungan pengembangan memiliki kelebihan dan kelemahannya sendiri. Pilihan antara Dev-C++, Visual Studio Code, atau CodeBlocks tergantung pada preferensi pribadi, kebutuhan proyek, dan kenyamanan pengguna. Beberapa programmer mungkin lebih suka VS Code karena kelenturannya dan berbagai ekstensi yang tersedia, sementara yang lain mungkin lebih menyukai lingkungan pengembangan yang lebih khusus seperti Dev-C++ atau CodeBlocks untuk pengembangan dalam bahasa tertentu.
 
 ## Job Sheet 2 - Pemrograman Dasar C
+Dalam bahasa pemrograman C, struktur dasarnya terdiri dari:
+
+### Struktur Dasar:
+
+1. **Fungsi `main()`:** Setiap program C dimulai dengan fungsi `main()`. Ini adalah titik awal dari program, di mana eksekusi dimulai.
+
+2. **Direktif Preprocessor (`#include`):** Dalam C, `#include` digunakan untuk menyertakan file-file header standar atau kustom yang diperlukan untuk program. Misalnya, `#include <stdio.h>` digunakan untuk menyertakan file header standar untuk fungsi input-output (I/O).
+
+3. **Komentar (`/*...*/` atau `//`):** Komentar digunakan untuk memberikan keterangan dalam kode. Compiler akan mengabaikan komentar saat menjalankan program.
+
+### Input dan Output:
+
+- **Input (`scanf()`):** `scanf()` digunakan untuk menerima input dari pengguna. Ini memungkinkan program untuk membaca nilai dari keyboard atau input yang diberikan oleh pengguna dan menyimpannya ke dalam variabel yang ditentukan.
+
+Contoh penggunaan `scanf()`:
+
+```c
+#include <stdio.h>
+
+int main() {
+    int angka;
+    printf("Masukkan sebuah angka: ");
+    scanf("%d", &angka); // Membaca nilai yang dimasukkan oleh pengguna
+    printf("Angka yang dimasukkan adalah: %d\n", angka); // Menampilkan nilai yang dimasukkan
+    return 0;
+}
+```
+
+- **Output (`printf()`):** `printf()` digunakan untuk menampilkan output ke layar. Ini memungkinkan program untuk menampilkan pesan atau nilai dari variabel ke layar.
+
+Contoh penggunaan `printf()`:
+
+```c
+#include <stdio.h>
+
+int main() {
+    int angka = 10;
+    printf("Nilai variabel angka adalah: %d\n", angka); // Menampilkan nilai variabel angka
+    return 0;
+}
+```
+
+Kedua fungsi, `printf()` dan `scanf()`, membutuhkan format string yang menggambarkan tipe data yang diharapkan (`%d` untuk integer, `%f` untuk float, `%c` untuk karakter, dll.) dan variabel di mana nilai akan disimpan atau dari mana nilai akan diambil.
+
+C memiliki banyak fungsi I/O lainnya di luar `printf()` dan `scanf()` yang dapat digunakan untuk membaca dan menulis ke file, tetapi untuk input-output dasar, fungsi-fungsi ini seringkali sudah cukup.
 
 ## Job Sheet 3 - Variabel, Konstanta dan Tipe Data
 
