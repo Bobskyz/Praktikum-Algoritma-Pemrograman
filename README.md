@@ -10,73 +10,62 @@
 📑 Semester : 1<br>
 
 ## Job Sheet 1 - Pengantar Algoritma dan Pemrograman
-### Apa itu Algoritma, Pemrograman, Program, Programmer, dan IDE?
-1. **Algoritma:** Algoritma adalah urutan langkah-langkah yang didefinisikan secara jelas untuk menyelesaikan masalah atau melakukan tugas tertentu. Ini mirip dengan resep dalam memasak, di mana langkah-langkahnya diikuti secara berurutan untuk mencapai hasil akhir yang diinginkan.
+### Algoritma dan Pemrograman :
+- **Algoritma :** Algoritma adalah serangkaian langkah yang didefinisikan dengan jelas untuk menyelesaikan masalah atau melakukan tugas tertentu. Ini mirip dengan resep dalam memasak, di mana langkah-langkahnya diikuti secara berurutan untuk mencapai hasil akhir yang diinginkan.
 
-2. **Pemrograman:** Pemrograman adalah proses membuat kode komputer yang mengikuti algoritma tertentu. Orang yang melakukan pemrograman disebut sebagai programmer. Ada berbagai bahasa pemrograman seperti Python, Java, C++, dan lainnya yang digunakan untuk menulis kode yang bisa dimengerti oleh komputer.
+- **Pemrograman :** Pemrograman adalah proses menerjemahkan algoritma ke dalam bahasa pemrograman tertentu sehingga komputer dapat memahami dan menjalankan instruksi-instruksi tersebut. Bahasa pemrograman seperti C, Python, Java, dan lainnya digunakan untuk menulis kode yang dapat dieksekusi oleh komputer.
 
-3. **Program:** Program adalah hasil dari proses pemrograman. Ini adalah kumpulan instruksi yang diberikan kepada komputer untuk melakukan tugas tertentu. Program bisa berupa aplikasi, perangkat lunak, atau bahkan bagian dari sebuah sistem yang menjalankan fungsi-fungsi spesifik.
+### Pengenalan Bahasa C :
+- **Bahasa C :** Bahasa pemrograman C adalah salah satu bahasa pemrograman yang paling penting dan banyak digunakan dalam pengembangan perangkat lunak. C adalah bahasa yang memiliki sintaksis sederhana dan kuat, sering digunakan untuk sistem operasi, pengembangan perangkat lunak sistem, perangkat lunak tertanam, dan aplikasi lainnya.
 
-4. **Programmer:** Programmer adalah orang yang menulis kode komputer. Mereka mengimplementasikan algoritma ke dalam bahasa pemrograman yang dimengerti oleh komputer untuk membuat program yang berguna.
+### IDE untuk Bahasa C :
+- **IDE (Integrated Development Environment) :** IDE menyediakan alat yang diperlukan bagi seorang programmer untuk menulis, menguji, dan mengembangkan perangkat lunak. Beberapa IDE yang sering digunakan untuk bahasa pemrograman C antara lain:
+    1. **Code::Blocks :** Code::Blocks adalah IDE gratis dan sumber terbuka untuk bahasa C. Ini menyediakan editor kode, compiler (GCC), debugger, dan alat bantu pengembangan lainnya.
+    2. **Dev-C++ :** Meskipun namanya mengandung "C++," Dev-C++ juga mendukung bahasa C. Ini adalah lingkungan pengembangan yang sederhana dan ramah pengguna dengan berbagai fitur seperti editor kode, compiler, dan debugger.
+    3. **Visual Studio Code (VS Code) dengan ekstensi C/C++ :** VS Code adalah editor kode yang sangat populer dan dapat disesuaikan. Dengan menambahkan ekstensi C/C++, Anda dapat menggunakannya untuk mengembangkan dalam bahasa C dengan fitur-fitur seperti debugging, linting, dan banyak lagi.
 
-5. **IDE (Integrated Development Environment):** IDE adalah sebuah perangkat lunak yang menyediakan berbagai alat untuk membantu programmer dalam menulis, menguji, dan mengembangkan perangkat lunak. Ini mencakup editor kode, debugger, compiler, dan alat lainnya yang memudahkan proses pengembangan perangkat lunak.
-
-Dengan menggunakan algoritma sebagai panduan, seorang programmer membuat program dengan menggunakan bahasa pemrograman, seringkali dengan bantuan IDE, untuk menghasilkan program yang dapat menjalankan fungsi-fungsi tertentu sesuai dengan kebutuhan.
-
-### 3 IDE untuk pemrograman C :
-1. **Dev-C++:** Dev-C++ adalah lingkungan pengembangan yang terutama digunakan untuk bahasa pemrograman C dan C++. Ini menyediakan editor kode, compiler (penerjemah kode), dan alat bantu lainnya yang berguna bagi programmer yang fokus pada pengembangan perangkat lunak dengan menggunakan bahasa pemrograman ini.
-
-2. **Visual Studio Code (VS Code):** VS Code adalah editor kode sumber terbuka yang sangat populer dan serbaguna. Meskipun namanya menyebutkan "Visual Studio," ini bukanlah versi penuh dari Visual Studio, melainkan lebih merupakan editor kode yang ringan dan dapat disesuaikan. VS Code mendukung banyak bahasa pemrograman, memiliki ekstensi yang beragam untuk menyesuaikan fungsionalitasnya, dan menyediakan banyak fitur seperti debugging, linting, kontrol versi, dan banyak lagi.
-
-3. **CodeBlocks:** CodeBlocks adalah lingkungan pengembangan yang serbaguna dan gratis untuk bahasa pemrograman C, C++, dan Fortran. Ini menyediakan antarmuka yang ramah pengguna, editor kode, compiler, debugger, dan banyak alat lainnya untuk membantu programmer dalam mengembangkan aplikasi dengan bahasa-bahasa tersebut.
-
-Setiap lingkungan pengembangan memiliki kelebihan dan kelemahannya sendiri. Pilihan antara Dev-C++, Visual Studio Code, atau CodeBlocks tergantung pada preferensi pribadi, kebutuhan proyek, dan kenyamanan pengguna. Beberapa programmer mungkin lebih suka VS Code karena kelenturannya dan berbagai ekstensi yang tersedia, sementara yang lain mungkin lebih menyukai lingkungan pengembangan yang lebih khusus seperti Dev-C++ atau CodeBlocks untuk pengembangan dalam bahasa tertentu.
+Memilih IDE tergantung pada preferensi pribadi dan kebutuhan pengembangan. Code::Blocks, Dev-C++, dan VS Code dengan ekstensi C/C++ semuanya merupakan pilihan yang populer untuk memulai pengembangan dalam bahasa C.
 
 ## Job Sheet 2 - Pemrograman Dasar C
-Dalam bahasa pemrograman C, struktur dasarnya terdiri dari:
+Dalam bahasa pemrograman C, struktur dasarnya terdiri dari :
 
-### Struktur Dasar:
+### Struktur Dasar :
+1. **Fungsi `main()` :** Setiap program C dimulai dengan fungsi `main()`. Ini adalah titik awal dari program, di mana eksekusi dimulai.
+2. **Direktif Preprocessor (`#include`) :** Dalam C, `#include` digunakan untuk menyertakan file-file header standar atau kustom yang diperlukan untuk program. Misalnya, `#include <stdio.h>` digunakan untuk menyertakan file header standar untuk fungsi input-output (I/O).
+3. **Komentar (`/*...*/` atau `//`) :** Komentar digunakan untuk memberikan keterangan dalam kode. Compiler akan mengabaikan komentar saat menjalankan program.
 
-1. **Fungsi `main()`:** Setiap program C dimulai dengan fungsi `main()`. Ini adalah titik awal dari program, di mana eksekusi dimulai.
+### Input dan Output :
+- **Input (`scanf()`) :** `scanf()` digunakan untuk menerima input dari pengguna. Ini memungkinkan program untuk membaca nilai dari keyboard atau input yang diberikan oleh pengguna dan menyimpannya ke dalam variabel yang ditentukan.
 
-2. **Direktif Preprocessor (`#include`):** Dalam C, `#include` digunakan untuk menyertakan file-file header standar atau kustom yang diperlukan untuk program. Misalnya, `#include <stdio.h>` digunakan untuk menyertakan file header standar untuk fungsi input-output (I/O).
-
-3. **Komentar (`/*...*/` atau `//`):** Komentar digunakan untuk memberikan keterangan dalam kode. Compiler akan mengabaikan komentar saat menjalankan program.
-
-### Input dan Output:
-
-- **Input (`scanf()`):** `scanf()` digunakan untuk menerima input dari pengguna. Ini memungkinkan program untuk membaca nilai dari keyboard atau input yang diberikan oleh pengguna dan menyimpannya ke dalam variabel yang ditentukan.
-
-Contoh penggunaan `scanf()`:
+Contoh penggunaan `scanf()` :
 
 ```c
 #include <stdio.h>
 
 int main() {
     int angka;
-    printf("Masukkan sebuah angka: ");
+    printf("Masukkan sebuah angka : ");
     scanf("%d", &angka); // Membaca nilai yang dimasukkan oleh pengguna
-    printf("Angka yang dimasukkan adalah: %d\n", angka); // Menampilkan nilai yang dimasukkan
+    printf("Angka yang dimasukkan adalah : %d\n", angka); // Menampilkan nilai yang dimasukkan
     return 0;
 }
 ```
 
-- **Output (`printf()`):** `printf()` digunakan untuk menampilkan output ke layar. Ini memungkinkan program untuk menampilkan pesan atau nilai dari variabel ke layar.
+- **Output (`printf()`) :** `printf()` digunakan untuk menampilkan output ke layar. Ini memungkinkan program untuk menampilkan pesan atau nilai dari variabel ke layar.
 
-Contoh penggunaan `printf()`:
+Contoh penggunaan `printf()` :
 
 ```c
 #include <stdio.h>
 
 int main() {
     int angka = 10;
-    printf("Nilai variabel angka adalah: %d\n", angka); // Menampilkan nilai variabel angka
+    printf("Nilai variabel angka adalah : %d\n", angka); // Menampilkan nilai variabel angka
     return 0;
 }
 ```
 
 Kedua fungsi, `printf()` dan `scanf()`, membutuhkan format string yang menggambarkan tipe data yang diharapkan (`%d` untuk integer, `%f` untuk float, `%c` untuk karakter, dll.) dan variabel di mana nilai akan disimpan atau dari mana nilai akan diambil.
-
 C memiliki banyak fungsi I/O lainnya di luar `printf()` dan `scanf()` yang dapat digunakan untuk membaca dan menulis ke file, tetapi untuk input-output dasar, fungsi-fungsi ini seringkali sudah cukup.
 
 ## Job Sheet 3 - Variabel, Konstanta dan Tipe Data
