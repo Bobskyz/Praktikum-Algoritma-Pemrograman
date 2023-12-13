@@ -89,6 +89,49 @@ C memiliki banyak fungsi I/O lainnya di luar `printf()` dan `scanf()` yang dapat
 Ini adalah konsep-konsep dasar dalam bahasa C yang sangat penting untuk dipahami oleh programmer. Dengan pemahaman yang baik tentang variabel, konstanta, tipe data, type casting, dan keywords, seseorang dapat memulai perjalanan dalam mempelajari dan menggunakan bahasa pemrograman C dengan lebih efektif.
 
 ## Job Sheet 4 - Operator
+- **Operator Aritmatika :** Digunakan untuk melakukan operasi matematika pada variabel numerik.
+    - `+` (penambahan)
+    - `-` (pengurangan)
+    - `*` (perkalian)
+    - `/` (pembagian)
+    - `%` (modulus, sisa dari pembagian)
+    - `++` (increment, menambahkan satu ke nilai variabel)
+    - `--` (decrement, mengurangi satu dari nilai variabel)
+
+- **Operator Penugasan :** Digunakan untuk memberikan nilai ke variabel.
+    - `=` (menugaskan nilai)
+    - `+=`, `-=`, `*=`, `/=`, `%=` (penugasan dengan operasi aritmatika)
+
+- **Operator Pembanding :** Digunakan untuk membandingkan nilai antara dua variabel.
+    - `==` (sama dengan)
+    - `!=` (tidak sama dengan)
+    - `>` (lebih besar dari)
+    - `<` (lebih kecil dari)
+    - `>=` (lebih besar dari atau sama dengan)
+    - `<=` (lebih kecil dari atau sama dengan)
+
+- **Operator Logika :** Digunakan untuk melakukan operasi logika pada nilai boolean.
+    - `&&` (AND logika)
+    - `||` (OR logika)
+    - `!` (NOT logika)
+
+- **Operator Bitwise :** Digunakan untuk melakukan operasi pada level bit pada nilai numerik.
+    - `&` (AND bitwise)
+    - `|` (OR bitwise)
+    - `^` (XOR bitwise)
+    - `<<` (left shift, menggeser bit ke kiri)
+    - `>>` (right shift, menggeser bit ke kanan)
+
+- **Operator Kondisional (Ternary) :** Menyediakan cara singkat untuk menulis pernyataan if-else.
+    - `? :` (Ternary operator)
+    
+Contoh penggunaan operator kondisional :
+```c
+int a = 10, b = 5;
+int max = (a > b) ? a : b; // Jika a lebih besar dari b, nilai max adalah a, jika tidak, nilai max adalah b
+```
+
+Operator-operator ini membantu dalam melakukan operasi matematika, penugasan nilai, perbandingan, logika, dan manipulasi bit, memungkinkan pengembang untuk mengontrol aliran program dan melakukan operasi matematika serta logika dalam bahasa C dengan lebih efisien.
 
 ## Job Sheet 5 - FLow Control (Decision Making)
 
