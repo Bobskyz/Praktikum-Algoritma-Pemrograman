@@ -62,7 +62,7 @@ void MenuUtama() {
         	if(kbhit()) { // Memeriksa apakah ada tombol yang ditekan
             		pilihan = getch();
             
-            		if (pilihan == 'S' or pilihan == 's' or pilihan == 'E' or pilihan == 'e') {
+            		if(pilihan == 'S' or pilihan == 's' or pilihan == 'E' or pilihan == 'e') {
             			if(pilihan == 's' or pilihan == 'S') {
             				system("cls");
             		
@@ -77,7 +77,7 @@ void MenuUtama() {
             		}
         	}
     	}
-	if (pilihan == 'E' || pilihan == 'e') {
+	if(pilihan == 'E' || pilihan == 'e') {
 		gotoxy(0, 4);
         	printf("Keluar dari permainan...\n");
         	exit(0);
