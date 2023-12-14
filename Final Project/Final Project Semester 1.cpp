@@ -216,7 +216,7 @@ int main() {
         	GerakRintangan(rintangan);
 
         	for(int a = 0; a < JumlahRintangan; ++a) {
-            		if (rintangan[a].aktif && rintangan[a].x == pesawat.x && rintangan[a].y == pesawat.y) {
+            		if (rintangan[a].aktif and rintangan[a].x == pesawat.x and rintangan[a].y == pesawat.y) {
                 		gameover = true;
                 		break;
             		}
