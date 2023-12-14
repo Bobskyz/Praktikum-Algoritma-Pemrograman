@@ -167,7 +167,7 @@ int BacaSkorTertinggi() {
     FILE *file;
     file = fopen("highscoreTHEPLANE.txt", "r");
     
-    if (file != NULL) {
+    if(file != NULL) {
         fscanf(file, "%d", &SkorTertinggi);
         fclose(file);
     } else {
