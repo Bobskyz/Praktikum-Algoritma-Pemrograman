@@ -192,6 +192,73 @@ int max = (a > b) ? a : b; // Jika a lebih besar dari b, nilai max adalah a, jik
 Percabangan memberikan fleksibilitas dalam mengontrol aliran program berdasarkan kondisi tertentu. If dan if-else digunakan untuk percabangan sederhana atau ganda, switch case digunakan untuk pilihan dari banyak nilai, operator ternary untuk percabangan singkat, dan percabangan bersarang untuk situasi kompleks yang memerlukan pengecekan berjenjang. Dengan memahami dan menggunakan percabangan secara efektif, Anda dapat mengendalikan alur program dengan lebih baik.
 
 ## Job Sheet 6 - Flow Control (Looping)
+- **Perulangan for :** Digunakan ketika jumlah iterasi yang tepat diketahui di awal.
+    ```c
+    for (inisialisasi; kondisi; iterasi) {
+        // blok kode yang akan diulang selama kondisi benar (true)
+    }
+    ```
+
+Contoh penggunaan :
+```c
+for (int i = 0; i < 5; i++) {
+    printf("%d ", i); // Mengulang dari 0 hingga 4
+}
+```
+
+- **Perulangan while :** Digunakan ketika jumlah iterasi tidak diketahui di awal, tetapi kondisi untuk perulangan diketahui.
+    ```c
+    while (kondisi) {
+        // blok kode yang akan diulang selama kondisi benar (true)
+        // perhatikan agar kondisi berubah agar perulangan tidak tak henti-hentinya
+    }
+    ```
+
+Contoh penggunaan :
+```c
+int i = 0;
+while (i < 5) {
+    printf("%d ", i); // Mengulang dari 0 hingga 4
+    i++;
+}
+```
+
+- **Perulangan do while :** Sama dengan while, namun blok kode di dalamnya akan dieksekusi minimal satu kali sebelum mengevaluasi kondisi.
+    ```c
+    do {
+        // blok kode yang akan diulang selama kondisi benar (true)
+        // pastikan kondisi diuji setelah blok kode dieksekusi
+    } while (kondisi);
+    ```
+
+Contoh penggunaan :
+```c
+int i = 0;
+do {
+    printf("%d ", i); // Akan mencetak 0 meskipun kondisi tidak terpenuhi karena do dieksekusi setidaknya sekali
+    i++;
+} while (i > 5);
+```
+
+- **Perulangan Bersarang (Nested Loop) :** Penggunaan perulangan di dalam perulangan.
+    ```c
+    for (inisialisasi; kondisi; iterasi) {
+        for (inisialisasi; kondisi; iterasi) {
+            // blok kode yang akan diulang
+        }
+    }
+    ```
+
+Contoh penggunaan :
+```c
+for (int i = 1; i <= 3; i++) {
+    for (int j = 1; j <= 3; j++) {
+        printf("%d,%d ", i, j); // Mengulang kombinasi i dan j dari 1 hingga 3
+    }
+}
+```
+
+Penggunaan perulangan di dalam bahasa C memberikan fleksibilitas dalam mengulangi kode berulang kali. for digunakan ketika jumlah iterasi diketahui, while digunakan saat jumlah iterasi tidak pasti, do while mirip dengan while dengan perbedaan dieksekusinya blok kode minimal sekali, dan perulangan bersarang membantu dalam mengulang kode di dalam kode. Dengan memahami perbedaan dan penggunaannya, Anda bisa menggunakan perulangan dengan lebih efektif dalam pembuatan program.
 
 ## Job Sheet 7 - Array
 
