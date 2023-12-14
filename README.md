@@ -261,6 +261,51 @@ for (int i = 1; i <= 3; i++) {
 Penggunaan perulangan di dalam bahasa C memberikan fleksibilitas dalam mengulangi kode berulang kali. for digunakan ketika jumlah iterasi diketahui, while digunakan saat jumlah iterasi tidak pasti, do while mirip dengan while dengan perbedaan dieksekusinya blok kode minimal sekali, dan perulangan bersarang membantu dalam mengulang kode di dalam kode. Dengan memahami perbedaan dan penggunaannya, Anda bisa menggunakan perulangan dengan lebih efektif dalam pembuatan program.
 
 ## Job Sheet 7 - Array
+Array dalam bahasa C adalah struktur data yang digunakan untuk menyimpan kumpulan elemen data yang serupa dalam satu variabel. Elemen-elemen ini dapat diakses menggunakan indeks yang merupakan posisi relatif dari setiap elemen di dalam array.
+
+### Pengertian Array :
+- **Array :** Sebuah struktur data yang terdiri dari elemen-elemen dengan tipe data yang sama, ditempatkan secara berurutan dalam memori dan diakses menggunakan indeks.
+
+### Penggunaan Array dalam Bahasa C :
+#### Deklarasi Array :
+```c
+// Mendeklarasikan array dengan 5 elemen bertipe int
+int angka[5];
+```
+
+#### Menginisialisasi Array :
+```c
+// Mendeklarasikan dan menginisialisasi array secara langsung
+int nilai[] = {10, 20, 30, 40, 50};
+```
+
+#### Mengakses Elemen Array :
+```c
+// Mengakses elemen ke-3 dari array nilai
+printf("%d", nilai[2]); // Output: 30 (indeks dimulai dari 0)
+```
+
+#### Mengubah Nilai Elemen Array :
+```c
+// Mengubah nilai elemen ke-4 dari array nilai
+nilai[3] = 99;
+```
+
+#### Penggunaan dalam Perulangan :
+```c
+// Menggunakan array dalam perulangan
+for (int i = 0; i < 5; i++) {
+    printf("%d ", nilai[i]); // Menampilkan seluruh elemen array
+}
+```
+
+#### Array Multidimensi :
+```c
+// Mendeklarasikan array dua dimensi
+int matriks[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+```
+
+Array memungkinkan penggunaan memori yang efisien dan akses cepat ke elemen-elemennya menggunakan indeks. Namun, perlu diingat bahwa dalam bahasa C, array memiliki ukuran tetap yang ditentukan saat pendeklarasian, dan ukuran array harus diketahui sebelum kompilasi program.
 
 ## Job Sheet 8 - Fungsi dan Prosedur
 
