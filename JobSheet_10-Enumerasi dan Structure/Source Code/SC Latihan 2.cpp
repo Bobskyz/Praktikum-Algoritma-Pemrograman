@@ -33,7 +33,7 @@ int main() {
         {22, 12, 19, 1, "Capricorn"}
     };
     int tanggal, bulan, tahun;
-    printf ("Tanggal Lahir Anda [tanggal-bulan-tahun] : ");
+    printf ("Tanggal Lahir Anda [DD-MM-YYYY] : ");
     scanf ("%d-%d-%d", &tanggal, &bulan, &tahun);
 
     const char *zodiakAnda = TentukanZodiak(tanggal, bulan, zodiak, sizeof(zodiak) / sizeof(zodiak[0]));
