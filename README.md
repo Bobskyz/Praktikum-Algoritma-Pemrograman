@@ -416,5 +416,79 @@ for (int i = 0; i < 5; i++) {
 Pointer sangat berguna dalam bahasa C untuk mengakses dan memanipulasi data dalam memori secara langsung. Dalam penggunaan praktis, mereka dapat digunakan untuk menyederhanakan operasi pada variabel, mengakses array, dan memungkinkan pengembangan struktur data yang lebih fleksibel. Penggunaan pointer untuk pass by reference memungkinkan untuk mengubah nilai variabel secara langsung dalam fungsi.
 
 ## Job Sheet 10 - Enumerasi dan Structure
+### Enum :
+- **Enum (Enumerations) :** Digunakan untuk mendefinisikan kumpulan konstanta bernama.
+
+#### Penggunaan Enum :
+```c
+enum Hari {Minggu, Senin, Selasa, Rabu, Kamis, Jumat, Sabtu}; // Pendefinisian enum
+
+enum Hari hariIni = Rabu; // Inisialisasi variabel hariIni dengan nilai Rabu
+```
+
+### Struct :
+- **Struct (Structure) :** Digunakan untuk membuat tipe data baru dengan gabungan beberapa tipe data.
+
+#### Penggunaan Struct :
+```c
+struct Mahasiswa {
+    char nama[50];
+    int umur;
+    float ipk;
+};
+
+struct Mahasiswa mhs1; // Mendefinisikan variabel mhs1 dengan tipe struct Mahasiswa
+```
+
+### Typedef pada Struct :
+- **Typedef pada Struct :** Digunakan untuk memberi alias pada tipe data struct.
+
+#### Penggunaan Typedef pada Struct :
+```c
+typedef struct {
+    char nama[50];
+    int umur;
+    float ipk;
+} Mahasiswa;
+
+Mahasiswa mhs1; // Mendefinisikan variabel mhs1 dengan tipe Mahasiswa (alias untuk struct Mahasiswa)
+```
+
+### Struct Bersarang :
+- **Struct Bersarang :** Menggunakan struct di dalam struct.
+
+```c
+struct Alamat {
+    char jalan[50];
+    char kota[50];
+};
+
+struct Anggota {
+    char nama[50];
+    int umur;
+    struct Alamat alamat; // Struct Alamat digunakan di dalam struct Anggota
+};
+```
+
+### Passing Struct ke dalam Fungsi :
+#### Passing Struct by Value :
+```c
+void tampilkanMahasiswa(Mahasiswa mhs) {
+    printf("Nama: %s, Umur: %d, IPK: %.2f\n", mhs.nama, mhs.umur, mhs.ipk);
+}
+
+tampilkanMahasiswa(mhs1); // Memanggil fungsi dengan variabel struct Mahasiswa sebagai argumen
+```
+
+#### Passing Struct by Reference (Menggunakan Pointer) :
+```c
+void ubahUmur(Mahasiswa *mhs, int umurBaru) {
+    mhs->umur = umurBaru;
+}
+
+ubahUmur(&mhs1, 25); // Mengubah nilai umur dari variabel mhs1 menggunakan pointer
+```
+
+Enum, struct, dan typedef memungkinkan untuk membuat struktur data yang lebih kompleks dan terorganisir dalam bahasa C. Dengan struct, Anda dapat menggabungkan beberapa tipe data menjadi satu unit, sementara enum berguna untuk mendefinisikan kumpulan konstanta. Penggunaan typedef memberi kemudahan dalam menggunakan tipe data yang telah didefinisikan. Struct bersarang memungkinkan untuk membuat struktur yang lebih terstruktur, dan passing struct ke dalam fungsi memungkinkan manipulasi data dalam struct.
 
 ## Job Sheet 11 - File Handling in C
