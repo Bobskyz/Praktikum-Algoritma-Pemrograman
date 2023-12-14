@@ -137,11 +137,11 @@ void GerakPesawat(struct PESAWAT *pesawat, char input) {
 
 // Fungsi untuk pergerakan rintangan
 void GerakRintangan(struct RINTANGAN rintangan[]) {
-    for (int a = 0; a < JumlahRintangan; a++) {
-        if (rintangan[a].aktif) {
+    for(int a = 0; a < JumlahRintangan; a++) {
+        if(rintangan[a].aktif) {
             rintangan[a].y++;
 
-            if (rintangan[a].y >= tinggi) {
+            if(rintangan[a].y >= tinggi) {
                 rintangan[a].y = 0;
                 rintangan[a].x = rand() % lebar;
             }
