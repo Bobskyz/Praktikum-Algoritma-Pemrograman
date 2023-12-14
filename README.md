@@ -492,3 +492,60 @@ ubahUmur(&mhs1, 25); // Mengubah nilai umur dari variabel mhs1 menggunakan point
 Enum, struct, dan typedef memungkinkan untuk membuat struktur data yang lebih kompleks dan terorganisir dalam bahasa C. Dengan struct, Anda dapat menggabungkan beberapa tipe data menjadi satu unit, sementara enum berguna untuk mendefinisikan kumpulan konstanta. Penggunaan typedef memberi kemudahan dalam menggunakan tipe data yang telah didefinisikan. Struct bersarang memungkinkan untuk membuat struktur yang lebih terstruktur, dan passing struct ke dalam fungsi memungkinkan manipulasi data dalam struct.
 
 ## Job Sheet 11 - File Handling in C
+Dalam bahasa C, ada beberapa fungsi standar yang digunakan untuk membaca dan menulis file. Pada dasarnya, prosesnya melibatkan tiga langkah: membuka file, membaca atau menulis data, dan menutup file setelah selesai.
+
+### Membaca File dalam Bahasa C :
+#### Langkah 1 : Membuka File :
+```c
+FILE *filePointer; // Deklarasi pointer ke FILE (tipe data bawaan untuk file)
+filePointer = fopen("nama_file.txt", "r"); // Membuka file untuk dibaca ("r" = read mode)
+
+if (filePointer == NULL) {
+    // Penanganan jika gagal membuka file
+} else {
+    // Melanjutkan dengan membaca file
+}
+```
+
+#### Langkah 2 : Membaca Data dari File :
+```c
+char karakter;
+while ((karakter = fgetc(filePointer)) != EOF) {
+    printf("%c", karakter); // Contoh: Membaca karakter demi karakter dari file dan menampilkannya
+}
+```
+
+#### Langkah 3 : Menutup File Setelah Selesai Membaca :
+```c
+fclose(filePointer); // Menutup file setelah selesai membaca
+```
+
+### Menulis ke dalam File dalam Bahasa C :
+#### Langkah 1 : Membuka File untuk Penulisan :
+```c
+FILE *filePointer; 
+filePointer = fopen("nama_file.txt", "w"); // Membuka file untuk ditulis ("w" = write mode)
+
+if (filePointer == NULL) {
+    // Penanganan jika gagal membuka file
+} else {
+    // Melanjutkan dengan menulis ke file
+}
+```
+
+#### Langkah 2 : Menulis Data ke dalam File :
+```c
+fprintf(filePointer, "Ini adalah teks yang akan ditulis ke dalam file.\n"); // Contoh: Menulis teks ke dalam file
+```
+
+#### Langkah 3 : Menutup File Setelah Selesai Menulis :
+```c
+fclose(filePointer); // Menutup file setelah selesai menulis
+```
+
+Perlu diperhatikan bahwa :
+- `"r"` digunakan untuk mode baca, `"w"` untuk mode tulis (menimpa isi file lama), dan `"a"` untuk mode append (menambahkan ke akhir file).
+- `fgetc()` digunakan untuk membaca karakter demi karakter dari file.
+- `fprintf()` digunakan untuk menulis data ke dalam file.
+
+Penting untuk mengecek keberhasilan pembukaan file (`filePointer != NULL`) sebelum membaca atau menulis, serta selalu menutup file setelah selesai untuk mencegah kehilangan data atau kesalahan pada file.
