@@ -43,87 +43,87 @@ void judul() {
 
 // Fungsi untuk menampilkan menu utama
 void MenuUtama() {
-    char pilihan;
-    system("cls");
+    	char pilihan;
+    	system("cls");
     
-    judul();
+    	judul();
     
-    while(1) {
-        gotoxy(0, 4);
-        printf ("Tekan S untuk bermain\n");
-        printf ("Tekan E untuk keluar dari permainan\n");
-        Sleep(500);
+	while(1) {
+        	gotoxy(0, 4);
+        	printf ("Tekan S untuk bermain\n");
+        	printf ("Tekan E untuk keluar dari permainan\n");
+        	Sleep(500);
         
-        system("cls");
+        	system("cls");
         
-        judul();
-        Sleep(500);
+        	judul();
+        	Sleep(500);
 
-        if(kbhit()) { // Memeriksa apakah ada tombol yang ditekan
-            pilihan = getch();
+        	if(kbhit()) { // Memeriksa apakah ada tombol yang ditekan
+            		pilihan = getch();
             
-            if (pilihan == 'S' or pilihan == 's' or pilihan == 'E' or pilihan == 'e') {
-            	if(pilihan == 's' or pilihan == 'S') {
-            		system("cls");
+            		if (pilihan == 'S' or pilihan == 's' or pilihan == 'E' or pilihan == 'e') {
+            			if(pilihan == 's' or pilihan == 'S') {
+            				system("cls");
             		
-            		printf ("Tutorial bermain :\n");
-            		printf ("Hindari semua rintangan selama yang kamu bisa\n\n");
-            		printf ("Penggunaan tombol :\n");
-            		printf ("<Tekan A = Bergerak ke kiri, D = Bergerak ke kanan, P = Jeda>\n\n");
-            		system("pause");
-            		system("cls");
+            				printf ("Tutorial bermain :\n");
+            				printf ("Hindari semua rintangan selama yang kamu bisa\n\n");
+            				printf ("Penggunaan tombol :\n");
+            				printf ("<Tekan A = Bergerak ke kiri, D = Bergerak ke kanan, P = Jeda>\n\n");
+            				system("pause");
+            				system("cls");
 				}
-                break;
-            }
-        }
-    }
+                		break;
+            		}
+        	}
+    	}
 	if (pilihan == 'E' || pilihan == 'e') {
 		gotoxy(0, 4);
-        printf("Keluar dari permainan...\n");
-        exit(0);
-    }
+        	printf("Keluar dari permainan...\n");
+        	exit(0);
+    	}
 }
 
 void inisialisasi(struct PESAWAT *pesawat, struct RINTANGAN rintangan[]) {
 	// Inisialisasi posisi awal pesawat
-    pesawat->x = lebar/2;
-    pesawat->y = tinggi-3;
+    	pesawat->x = lebar/2;
+    	pesawat->y = tinggi-3;
 
 	// Penggunaan Looping untuk menginisialisasikan posisi acak rintangan
-    for(int a = 0; a < JumlahRintangan; a++) {
-        rintangan[a].x = rand() % lebar;
-        rintangan[a].y = rand() % (tinggi / 2);
-        rintangan[a].aktif = true;
-    }
+    	for(int a = 0; a < JumlahRintangan; a++) {
+        	rintangan[a].x = rand() % lebar;
+        	rintangan[a].y = rand() % (tinggi / 2);
+        	rintangan[a].aktif = true;
+    	}
 }
 
 void tampilan(struct PESAWAT *pesawat, struct RINTANGAN rintangan[]) {
-    gotoxy(0, 0); // Mengatur posisi konsol
+    	gotoxy(0, 0); // Mengatur posisi konsol
 
 	// Perulangan untuk membuat area tampilan pesawat dan rintangan
-    for(int a = 0; a < tinggi; a++) {
-        for(int b = 0; b < lebar; b++) {
-            if((a == pesawat->y) and (b == pesawat->x)) {
-                printf("A");
-            } else {
-                bool RintanganMuncul = false;
+    	for(int a = 0; a < tinggi; a++) {
+        	for(int b = 0; b < lebar; b++) {
+            		if((a == pesawat->y) and (b == pesawat->x)) {
+                		printf("A");
+            		} else {
+                		bool RintanganMuncul = false;
                 
-                // Perulangan untuk memunculkan rintangan
-                for(int c = 0; c < JumlahRintangan; c++) {
-                    if((a == rintangan[c].y) and (b == rintangan[c].x) and rintangan[c].aktif) {
-                        printf("*");
+                		// Perulangan untuk memunculkan rintangan
+                		for(int c = 0; c < JumlahRintangan; c++) {
+                    			if((a == rintangan[c].y) and (b == rintangan[c].x) and rintangan[c].aktif) {
+                        		printf("*");
                         
-                        RintanganMuncul = true;
-                        break;
-                    }
-                }
-                if(!RintanganMuncul) {
-                    printf(" ");
-                }
-            }
-        }
-        printf("\n");
-    }
+                        		RintanganMuncul = true;
+                        		break;
+                    			}
+                		}
+                		if(!RintanganMuncul) {
+                    			printf(" ");
+                		}
+            		}
+        	}
+        	printf("\n");
+    	}
 }
 
 // Fungsi untuk menggerakkan pesawat
@@ -179,50 +179,50 @@ int BacaSkorTertinggi() {
 
 int main() {
 	permainan :
-    srand(time(NULL)); // Menginisialisasi pembuatan nomor acak seiring berjalannya waktu
+	srand(time(NULL)); // Menginisialisasi pembuatan nomor acak seiring berjalannya waktu
     
-    struct PESAWAT pesawat;
-    struct RINTANGAN rintangan[JumlahRintangan];
+    	struct PESAWAT pesawat;
+    	struct RINTANGAN rintangan[JumlahRintangan];
 
 	int skor = 0;
 	int tunda = 100;
 	int hitungan = 0;
-    int SkorTertinggi = BacaSkorTertinggi();
+    	int SkorTertinggi = BacaSkorTertinggi();
 	float kecepatan = 1.0;
-    char input;
-    bool gameover = false;
+    	char input;
+	bool gameover = false;
     
-    //Blok kode untuk membuat kursor program menjadi tidak terlihat
-    HANDLE konsol = GetStdHandle(STD_OUTPUT_HANDLE);
-    CONSOLE_CURSOR_INFO InfoKursor;
-    GetConsoleCursorInfo(konsol, &InfoKursor);
-    InfoKursor.bVisible = 0;
-    SetConsoleCursorInfo(konsol, &InfoKursor);
+	//Blok kode untuk membuat kursor program menjadi tidak terlihat
+    	HANDLE konsol = GetStdHandle(STD_OUTPUT_HANDLE);
+    	CONSOLE_CURSOR_INFO InfoKursor;
+    	GetConsoleCursorInfo(konsol, &InfoKursor);
+    	InfoKursor.bVisible = 0;
+    	SetConsoleCursorInfo(konsol, &InfoKursor);
     
-    MenuUtama();
-    inisialisasi(&pesawat, rintangan);
+    	MenuUtama();
+    	inisialisasi(&pesawat, rintangan);
     
-    while(!gameover) {
-        gotoxy(0, 0);
-        printf ("\t\t\tSkor Anda : %d\n", skor);
-        printf ("\t\t\tKecepatan : %.1fx\n\n", kecepatan);
+    	while(!gameover) {
+        	gotoxy(0, 0);
+        	printf ("\t\t\tSkor Anda : %d\n", skor);
+        	printf ("\t\t\tKecepatan : %.1fx\n\n", kecepatan);
 		
-        tampilan(&pesawat, rintangan);
+        	tampilan(&pesawat, rintangan);
 
-        if(kbhit()) {
-            input = getch();
-            GerakPesawat(&pesawat, input);
-        }
-        GerakRintangan(rintangan);
+        	if(kbhit()) {
+			input = getch();
+            		GerakPesawat(&pesawat, input);
+        	}
+        	GerakRintangan(rintangan);
 
-        for(int a = 0; a < JumlahRintangan; ++a) {
-            if (rintangan[a].aktif && rintangan[a].x == pesawat.x && rintangan[a].y == pesawat.y) {
-                gameover = true;
-                break;
-            }
-        }
-        for(int a = 0; a < lebar; a++) {
-        	printf ("=");
+        	for(int a = 0; a < JumlahRintangan; ++a) {
+            		if (rintangan[a].aktif && rintangan[a].x == pesawat.x && rintangan[a].y == pesawat.y) {
+                		gameover = true;
+                		break;
+            		}
+        	}
+        	for(int a = 0; a < lebar; a++) {
+        		printf ("=");
 		}
 		printf ("\n");
 		
@@ -241,18 +241,18 @@ int main() {
 			}
 			system("cls");
 		}
-        Sleep(tunda); // Delay untuk mengatur kecepatan permainan
-        hitungan++;
+        	Sleep(tunda); // Delay untuk mengatur kecepatan permainan
+        	hitungan++;
         
-        // Penggunaan decision making untuk mempersingkat delay
-        if(hitungan % 100 == 0) {
-        	tunda -= 5;
-        	kecepatan += 0.1;
+        	// Penggunaan decision making untuk mempersingkat delay
+        	if(hitungan % 100 == 0) {
+        		tunda -= 5;
+        		kecepatan += 0.1;
 		}
 		
-        // Penggunaan decision making untuk menghitung jumlah skor
-        if(hitungan % 10 == 0) {
-        	skor += 10;
+        	// Penggunaan decision making untuk menghitung jumlah skor
+        	if(hitungan % 10 == 0) {
+        		skor += 10;
 		}
 		
 		//Penggunaan decision making untuk memberhentikan program sementara
@@ -262,16 +262,16 @@ int main() {
 			input = NULL;
 			system ("cls");
 		}
-    }
-    gotoxy(0, 3);
-    printf ("\t\t\tPesawat anda menabrak sebuah rintangan\n");
-    printf ("\t\t\tPermainan selesai!\n\n");
+    	}
+    	gotoxy(0, 3);
+    	printf ("\t\t\tPesawat anda menabrak sebuah rintangan\n");
+    	printf ("\t\t\tPermainan selesai!\n\n");
     
-    if(skor > SkorTertinggi) {
-    	printf ("\t\t\tKamu meraih skor tertinggi\n");
-    	printf ("\t\t\tSkormu telah tersimpan di file highscoreTHEPLANE.txt\n");
-    	SkorTertinggi = skor; // Perbarui highscore jika skor saat ini lebih tinggi
-        SimpanSkor(SkorTertinggi);
+    	if(skor > SkorTertinggi) {
+    		printf ("\t\t\tKamu meraih skor tertinggi\n");
+    		printf ("\t\t\tSkormu telah tersimpan di file highscoreTHEPLANE.txt\n");
+    		SkorTertinggi = skor; // Perbarui highscore jika skor saat ini lebih tinggi
+        	SimpanSkor(SkorTertinggi);
 	} else {
 		printf ("\t\t\tSkor tertinggi anda : %d", SkorTertinggi);
 	}
@@ -279,5 +279,5 @@ int main() {
 	system("pause");
 	goto permainan;
 	
-    return 0;
+    	return 0;
 }
