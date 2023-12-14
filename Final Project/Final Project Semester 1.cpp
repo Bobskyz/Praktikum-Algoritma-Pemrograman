@@ -77,7 +77,7 @@ void MenuUtama() {
             		}
         	}
     	}
-	if(pilihan == 'E' || pilihan == 'e') {
+	if(pilihan == 'E' or pilihan == 'e') {
 		gotoxy(0, 4);
         	printf("Keluar dari permainan...\n");
         	exit(0);
