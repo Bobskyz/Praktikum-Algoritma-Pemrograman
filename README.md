@@ -549,3 +549,6 @@ Perlu diperhatikan bahwa :
 - `fprintf()` digunakan untuk menulis data ke dalam file.
 
 Penting untuk mengecek keberhasilan pembukaan file (`filePointer != NULL`) sebelum membaca atau menulis, serta selalu menutup file setelah selesai untuk mencegah kehilangan data atau kesalahan pada file.
+
+---
+**Thank you for visiting my repository🙏🏻**
