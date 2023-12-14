@@ -371,6 +371,49 @@ void tambahSepuluh(int *x) {
 Konsep variabel lokal dan global berkaitan dengan cakupan variabel dalam program. Pass by value dan pass by reference menentukan bagaimana nilai atau alamat variabel dikirim ke dalam fungsi. Pass by value menggunakan salinan nilai, sedangkan pass by reference menggunakan alamat memori variabel tersebut. Fungsi rekursif memanggil dirinya sendiri untuk menyelesaikan suatu tugas secara berulang.
 
 ## Job Sheet 9 - Pointer
+Pointer adalah variabel yang berisi alamat memori dari variabel lain. Pointer memungkinkan akses langsung ke lokasi memori, yang berguna untuk beberapa operasi seperti manipulasi data secara langsung atau pengembangan mekanisme yang lebih efisien dalam penggunaan memori.
+
+### Pengertian Pointer :
+- **Pointer :** Variabel yang menyimpan alamat memori dari variabel lain.
+
+### Penggunaan Pointer :
+#### Deklarasi Pointer :
+```c
+int *ptr; // Deklarasi pointer ke variabel bertipe int
+```
+
+#### Inisialisasi Pointer :
+```c
+int angka = 5;
+int *ptr = &angka; // Inisialisasi pointer dengan alamat memori dari variabel angka
+```
+
+#### Menggunakan Pointer untuk Dereferensi (Mengakses Nilai yang Tersimpan di Alamat yang Ditunjuk) :
+```c
+printf("%d", *ptr); // Output: 5 (nilai yang tersimpan di alamat yang ditunjuk oleh ptr)
+```
+
+### Pointer untuk Pass by Reference :
+- **Pointer untuk Pass by Reference :** Penggunaan pointer untuk mengirim alamat memori variabel ke dalam fungsi, sehingga perubahan yang dilakukan di dalam fungsi akan mempengaruhi nilai variabel asli.
+
+```c
+void tambahSepuluh(int *x) {
+    *x += 10; // Mengubah nilai variabel yang direferensikan oleh pointer x
+}
+```
+
+### Pointer untuk Mengakses Array :
+#### Penggunaan Pointer untuk Mengakses Elemen Array :
+```c
+int arr[] = {10, 20, 30, 40, 50};
+int *ptr = arr; // Inisialisasi pointer dengan alamat memori array
+
+for (int i = 0; i < 5; i++) {
+    printf("%d ", *(ptr + i)); // Mengakses elemen array menggunakan pointer
+}
+```
+
+Pointer sangat berguna dalam bahasa C untuk mengakses dan memanipulasi data dalam memori secara langsung. Dalam penggunaan praktis, mereka dapat digunakan untuk menyederhanakan operasi pada variabel, mengakses array, dan memungkinkan pengembangan struktur data yang lebih fleksibel. Penggunaan pointer untuk pass by reference memungkinkan untuk mengubah nilai variabel secara langsung dalam fungsi.
 
 ## Job Sheet 10 - Enumerasi dan Structure
 
