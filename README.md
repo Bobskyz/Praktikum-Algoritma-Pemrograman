@@ -308,6 +308,67 @@ int matriks[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 Array memungkinkan penggunaan memori yang efisien dan akses cepat ke elemen-elemennya menggunakan indeks. Namun, perlu diingat bahwa dalam bahasa C, array memiliki ukuran tetap yang ditentukan saat pendeklarasian, dan ukuran array harus diketahui sebelum kompilasi program.
 
 ## Job Sheet 8 - Fungsi dan Prosedur
+### Fungsi :
+- **Fungsi :** Sebuah blok kode yang dirancang untuk melakukan tugas tertentu dan dapat dipanggil dari bagian lain dalam program.
+
+### Penggunaan Fungsi :
+#### Pendefinisian Fungsi :
+```c
+// Pendefinisian fungsi
+int tambah(int a, int b) {
+    return a + b;
+}
+```
+
+#### Memanggil Fungsi :
+```c
+// Memanggil fungsi
+int hasil = tambah(5, 3); // Memanggil fungsi tambah dengan parameter 5 dan 3
+printf("%d", hasil); // Output: 8
+```
+
+### Fungsi Rekursif :
+- **Fungsi Rekursif :** Fungsi yang memanggil dirinya sendiri untuk menyelesaikan masalah secara berulang.
+```c
+int faktorial(int n) {
+    if (n <= 1) {
+        return 1;
+    } else {
+        return n * faktorial(n - 1);
+    }
+}
+```
+
+### Variabel Lokal dan Global :
+- **Variabel Lokal :** Variabel yang dideklarasikan di dalam sebuah fungsi dan hanya dapat diakses di dalam fungsi tersebut.
+- **Variabel Global :** Variabel yang dideklarasikan di luar fungsi dan dapat diakses oleh seluruh fungsi dalam program.
+
+```c
+int globalVar = 10; // Variabel global
+
+void fungsi() {
+    int lokalVar = 5; // Variabel lokal
+    // ...
+}
+```
+
+### Pass by Value :
+- **Pass by Value :** Saat argumen dikirim ke fungsi, salinan nilai dari argumen yang sebenarnya dikirimkan ke parameter fungsi.
+```c
+void ganda(int x) {
+    x = x * 2; // x merupakan salinan nilai yang dikirim, perubahan tidak mempengaruhi nilai asli
+}
+```
+
+### Pass by Reference :
+- **Pass by Reference :** Saat argumen dikirim ke fungsi, alamat memori dari argumen yang sebenarnya dikirimkan ke parameter fungsi.
+```c
+void tambahSepuluh(int *x) {
+    *x += 10; // Mengubah nilai variabel yang direferensikan oleh pointer x
+}
+```
+
+Konsep variabel lokal dan global berkaitan dengan cakupan variabel dalam program. Pass by value dan pass by reference menentukan bagaimana nilai atau alamat variabel dikirim ke dalam fungsi. Pass by value menggunakan salinan nilai, sedangkan pass by reference menggunakan alamat memori variabel tersebut. Fungsi rekursif memanggil dirinya sendiri untuk menyelesaikan suatu tugas secara berulang.
 
 ## Job Sheet 9 - Pointer
 
