@@ -1,10 +1,10 @@
 // Developed by : Dafin Surya
 
-#include <stdio.h> // Header default pemrograman c
-#include <stdbool.h> // Header untuk pengoperasian tipe data boolean
-#include <conio.h> // Header untuk penggunaan fungsi yang dapat mengontrol layar konsol
-#include <time.h> // Header untuk pengoperasian waktu pada program
-#include <windows.h> // Header untuk mengakses fitur yang disediakan pada windows OS
+#include <stdio.h> // Library default pemrograman c
+#include <stdbool.h> // Library untuk pengoperasian tipe data boolean
+#include <conio.h> // Library untuk penggunaan fungsi yang dapat mengontrol layar konsol
+#include <time.h> // Library untuk pengoperasian waktu pada program
+#include <windows.h> // Library untuk mengakses fitur yang disediakan pada windows OS
 
 // Deklarasi konstanta
 #define lebar 20
